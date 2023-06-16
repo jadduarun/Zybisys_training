@@ -1,0 +1,92 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: bisque;
+}
+
+ul {
+    margin: 0px;
+    height: 60px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+    background-color: tomato;
+}
+
+ul li {
+    padding: 15px;
+    font-size: 21px;
+    ;
+    color: azure;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+ul li:hover {
+    color: maroon;
+    cursor: pointer;
+}
+
+ul li:active {
+    color: chartreuse;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    width: 86%;
+    margin: 83px 50px 82px 80px;
+}
+
+.gandhi,
+.nehru,
+.nethaji {
+    border: 1px solid black;
+    text-align: justify;
+    border-radius: 10px;
+    padding: 30px 20px 50px 20px;
+    margin-right: 10px;
+    width: 25%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.gandhi:hover {
+    background-color: thistle;
+}
+
+.nehru:hover {
+    background-color: thistle;
+}
+
+.nethaji:hover {
+    background-color: thistle;
+}
+
+h1 {
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    padding: 1px;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: wheat;
+}
+
+input[type="submit"]:active {
+    background-color: seagreen;
+}
+
+input[type="submit"] {
+    border-radius: 8px;
+    padding: 10px;
+    align-items: center;
+    background-color: darkseagreen;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+}

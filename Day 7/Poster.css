@@ -1,0 +1,139 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+}
+
+.outline {
+    background-color: orange;
+    border: 1px solid black;
+    height: 630px;
+    width: 450px;
+    margin-top: 10px;
+    border-radius: 5px;
+    ;
+}
+
+.title {
+    margin-top: 10px;
+    background-image: url("Girl\ with\ Degree.jfif");
+    height: 266px;
+}
+
+.content {
+    margin-top: 0px;
+    margin-left: 20px;
+    border: 1px solid black;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    background-color: red;
+    height: 350px;
+    width: 200px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.application {
+    font-size: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 0.8px;
+    color: azure;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+
+.dots {
+    margin-top: 2px;
+    text-align: center;
+    color: azure;
+}
+
+h2 {
+    text-align: center;
+    color: azure;
+    margin-bottom: 0px;
+}
+
+.college {
+    margin-top: 0px;
+    text-align: center;
+    color: azure;
+    margin-bottom: 0px;
+}
+
+.deadline {
+    font-size: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: azure;
+    text-align: center;
+    line-height: 2px;
+}
+
+.para {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    color: azure;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+.today {
+    margin-top: 0px;
+    color: azure;
+    text-align: center;
+    font-size: 13px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.left {
+    margin-top: 80px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.scholar {
+    margin-bottom: 0px;
+}
+
+.contact {
+    margin-top: 13px;
+}
+
+h4 {
+    font-size: 14px;
+    padding-left: 8px;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 0px
+}
+
+.eligibility {
+    margin-bottom: 0px;
+    padding-left: 15px;
+    margin-top: 8px;
+}
+
+.uploads {
+    margin-left: 15px;
+    margin-bottom: 0px;
+    margin-top: 8px;
+}
+
+ul {
+    margin-top: 4px;
+}
+
+.footer {
+    color: red;
+    text-align: center;
+}

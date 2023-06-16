@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown Timer</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      p {
+        font-size: 23px;
+        font-family: "Inspiration", cursive;
+      }
+
+      .newyear {
+        font-family: "Inspiration", cursive;
+        font-size: 50px;
+        font-weight: 400;
+        margin-top: 10px;
+      }
+
+      .counter {
+        display: flex;
+        margin-top: 30px;
+      }
+
+      .box {
+        width: 50px;
+        height: 50px;
+        text-align: center;
+      }
+
+      .box h2 {
+        font-size: 20px;
+        font-weight: 500;
+      }
+      .box small {
+        font-size: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Countdown to</p>
+    <h2 class="newyear">New Year</h2>
+    <div class="counter">
+      <div class="box">
+        <h2 id="days">00</h2>
+        <small>Days</small>
+      </div>
+
+      <div class="box">
+        <h2 id="hours">00</h2>
+        <small>Hours</small>
+      </div>
+
+      <div class="box">
+        <h2 id="minutes">00</h2>
+        <small>Minutes</small>
+      </div>
+
+      <div class="box">
+        <h2 id="seconds">00</h2>
+        <small>Seconds</small>
+      </div>
+    </div>
+    <script>
+      const days = document.querySelector("#days");
+      const hours = document.querySelector("#hours");
+      const minutes = document.querySelector("#minutes");
+      const seconds = document.querySelector("#seconds");
+
+      const currentYear = new Date().getFullYear();
+      let date = "January 1" + " " + (currentYear + 1) + " " + "00:00:00";
+      console.log("date", date);
+      const newYear = new Date(date);
+
+      function UpdateTime() {
+        const currentDate = new Date();
+        const diff = newYear - currentDate;
+        const d = Math.floor(diff / 1000 / 60 / 60 / 24);
+        const h = Math.floor((diff / 1000 / 60 / 60) % 24);
+        const m = Math.floor((diff / 1000 / 60) % 60);
+        const s = Math.floor((diff / 1000) % 60);
+        const ms = Math.floor(diff % 1000);
+
+        days.innerHTML = d < 10 ? "0" + d : d;
+        hours.innerHTML = h < 10 ? "0" + h : h;
+        minutes.innerHTML = m < 10 ? "0" + m : m;
+        seconds.innerHTML = s < 10 ? "0" + s : s;
+      }
+      setInterval(UpdateTime, 1000);
+    </script>
+  </body>
+</html>

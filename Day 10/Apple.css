@@ -1,0 +1,561 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.nav {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #424244;
+  padding: 10px 110px 10px 110px;
+  list-style: none;
+  color: #d9d9da;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 14px;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  z-index: 1;
+}
+.small_apple_icon {
+  margin-left: 100px;
+}
+.small_bag_icon,
+.small_search_icon {
+  margin-top: 6px;
+  margin-right: 15px;
+}
+
+.article {
+  padding: 8px;
+  padding-top: 15px;
+  padding-bottom: 14px;
+  text-align: center;
+  color: #424244;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 490;
+  letter-spacing: -0.3px;
+}
+.shop_now {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+}
+.wwdc23,
+.iphone_14_pro {
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.apple_logo {
+  padding: 0px;
+  margin-top: -59px;
+}
+.wwdc23_logo {
+  padding: 0px;
+  margin-top: -175px;
+}
+.watch_time {
+  color: white;
+  margin-top: 20px;
+  font-size: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.learn_more {
+  font-size: 24px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.title {
+  padding-top: 40px;
+  color: white;
+  font-size: 55px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+.pro_beyond {
+  color: white;
+  font-size: 30px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.iphone_14_pro_img {
+  margin-top: 51px;
+}
+.learn_and_buy {
+  padding-top: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.iphone_14 {
+  height: 100vh;
+  width: 99.8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.title_iphone_14 {
+  color: black;
+  font-size: 55px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.wonderfull {
+  color: black;
+  font-size: 30px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  padding-left: 10px;
+}
+.watch {
+  position: relative;
+}
+.title_and_text {
+  position: absolute;
+  top: 10%;
+  left: 34%;
+  text-align: center;
+}
+.watch_and_series {
+  padding-left: 10px;
+}
+.healthy_leap {
+  color: white;
+  font-size: 20px;
+  padding-top: 10px;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.learn_and_buy_watch {
+  padding-top: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.learnmore,
+.buy {
+  text-decoration: none;
+  font-size: 17px;
+  color: slateblue;
+}
+.Ipad,
+.macbook_pro,
+.color_watch,
+.ipad_pro,
+.homepod {
+  position: relative;
+}
+.Ipad {
+  height: 99.5%;
+}
+.ipad_title_and_text {
+  position: absolute;
+  top: 8%;
+  left: 32%;
+  text-align: center;
+}
+.ipad_title {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.lovable {
+  font-size: 20px;
+  padding-top: 10px;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding-top: 0px;
+}
+.big_laptop {
+  height: 99%;
+}
+.macbook_pro_title_and_text {
+  position: absolute;
+  top: 9%;
+  left: 23%;
+  text-align: center;
+  color: white;
+}
+.macbook_pro_title {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.supercharged {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.color_watch_img {
+  height: 99%;
+}
+.color_watch_title_and_text {
+  position: absolute;
+  top: 10%;
+  left: 23%;
+  text-align: center;
+}
+.pride {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+.pride_edition {
+  padding-top: 12px;
+}
+.pride_edition_link {
+  color: slateblue;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.ipad_pro_title_and_text {
+  position: absolute;
+  top: 10%;
+  left: 33%;
+  text-align: center;
+  color: white;
+}
+.ipad_pro_title {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.supercharged_and_m2 {
+  display: flex;
+}
+.supercharged_m2 {
+  padding: 0px 5px;
+  font-size: 21px;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.learn_and_buy_ipad_pro {
+  padding-top: 8px;
+  color: purple;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.homepod_img {
+  height: 99.3%;
+}
+.homepod_title_and_text {
+  position: absolute;
+  top: 9%;
+  left: 35%;
+  text-align: center;
+  color: white;
+}
+.homepod_title {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.profound {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f5f5f7;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 140px;
+  margin: 20px 0px 0px 10px;
+  padding-bottom: 20px;
+  list-style: none;
+}
+.purchase_details {
+  font-weight: 600;
+  padding-bottom: 10px;
+  color: #acacae;
+  text-align: justify;
+  font-size: 12.5px;
+  line-height: 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+hr {
+  margin: 20px 0px;
+}
+.footer_outline_ul {
+  color: #acacae;
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  font-weight: 500;
+  list-style-type: none;
+}
+b {
+  color: #424244;
+}
+.shop_and_learn_and_apple_wallet ul li {
+  list-style: none;
+  padding-top: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 12.5px;
+}
+.apple_wallet,
+.entertainment,
+.education,
+.healthcare,
+.about_apple {
+  margin-top: 20px;
+}
+.account_and_entertainment ul li {
+  list-style-type: none;
+  padding-top: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 12.5px;
+}
+.apple_store ul li {
+  list-style-type: none;
+  padding-top: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 12.5px;
+}
+.business_education_healthcare ul li {
+  list-style-type: none;
+  padding-top: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 12.5px;
+}
+.apple_values_and_about_apple ul li {
+  list-style-type: none;
+  padding-top: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 12.5px;
+}
+.contact_us {
+  font-size: 12.5px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding-top: 40px;
+  font-weight: 400;
+  color: #acacae;
+  width: 61%;
+}
+.last_hr {
+  margin: 8px 0px;
+}
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12.5px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  color: #acacae;
+}
+.copyrights {
+  display: flex;
+  font-size: 12.5px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1115px) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    list-style: none;
+    color: #d9d9da;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 14px;
+    align-items: center;
+    width: 100%;
+  }
+  .small_apple_icon {
+    margin-left: 10px;
+    height: 25px;
+    width: 25px;
+  }
+  .small_bag_icon {
+    padding-right: 25px;
+  }
+  .article {
+    font-size: 16px;
+    letter-spacing: -0.7px;
+    padding-left: 86px;
+  }
+  .shop_now {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+  }
+  .wwdc23,
+  .iphone_14_pro {
+    height: 90vh;
+    width: 108%;
+  }
+  .apple_logo {
+    padding: 0px;
+    margin-top: -48px;
+    height: 550px;
+    width: 840px;
+  }
+  .wwdc23_logo {
+    height: 50px;
+    width: 240px;
+    padding: 0px;
+    margin-top: -155px;
+  }
+  .watch_time {
+    margin-top: 10px;
+    font-size: 25px;
+  }
+  .title {
+    font-size: 50px;
+    margin-top: 50px;
+  }
+  .pro_beyond {
+    font-size: 27px;
+  }
+  .iphone_14_pro_img {
+    margin-top: 40px;
+  }
+  .learn_and_buy {
+    padding-top: 14px;
+    font-size: 10px;
+  }
+  .learn_more {
+    font-size: 22px;
+  }
+  .iphone_14 {
+    height: 90vh;
+    width: 108%;
+    margin-top: 30px;
+  }
+  .title_iphone_14 {
+    font-size: 50px;
+    line-height: 57px;
+  }
+  .wonderfull {
+    font-size: 26px;
+  }
+  .grid {
+    width: 107.1%;
+  }
+  .title_and_text {
+    left: 31%;
+  }
+  .watch_and_series {
+    height: 45px;
+    width: 125px;
+  }
+  .healthy_leap {
+    font-size: 21px;
+  }
+  .learn_and_buy_watch {
+    padding-top: 10px;
+  }
+  .learnmore,
+  .buy {
+    text-decoration: none;
+    font-size: 17px;
+    color: slateblue;
+  }
+  .ipad_title_and_text {
+    top: 9%;
+    left: 25%;
+  }
+  .ipad_title {
+    font-size: 35px;
+  }
+  .macbook_pro_title_and_text {
+    top: 8%;
+    left: 21.2%;
+  }
+  .macbook_pro_title {
+    font-size: 35px;
+  }
+  .supercharged {
+    font-size: 18px;
+  }
+  .color_watch_logo {
+    height: 40px;
+    width: 145px;
+  }
+  .color_watch_title_and_text {
+    top: 8%;
+    left: 24%;
+  }
+  .pride {
+    font-size: 20px;
+  }
+  .pride_edition_link {
+    font-size: 17px;
+  }
+  .ipad_pro_title_and_text {
+    top: 7%;
+    left: 32%;
+  }
+  .ipad_pro_title {
+    font-size: 35px;
+  }
+  .supercharged_m2 {
+    font-size: 18px;
+  }
+  .m2_chip {
+    height: 30px;
+    width: 30px;
+  }
+  .homepod_title_and_text {
+    top: 7%;
+    left: 35%;
+  }
+  .homepod_title {
+    font-size: 35px;
+  }
+  .profound {
+    font-size: 18px;
+  }
+  footer {
+    width: 108%;
+  }
+  .contact_us {
+    width: 65%;
+  }
+}

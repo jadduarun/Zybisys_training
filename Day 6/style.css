@@ -1,0 +1,30 @@
+body {
+    margin: 20px;
+}
+
+#div {
+    border: 3px solid;
+    padding: 10px 20px 20px 30px;
+    background-color: chartreuse;
+    height: 400px;
+}
+
+p {
+    color: red;
+    font-size: 20px;
+}
+
+.blue {
+    color: blue;
+    font-size: 28px;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li {
+    list-style: circle;
+}
+
+input[type="text"] {
+    border-color: brown;
+}

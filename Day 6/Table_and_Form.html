@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table and Form</title>
+    <link rel="stylesheet" href="Table_and_Form.css">
+</head>
+
+<body>
+    <h1>Form with CSS</h1>
+    <div class="box">
+        <fieldset>
+            <legend>Register Form</legend>
+            <div class="form">
+                <form action="" method="">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br><br>
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age"><br><br>
+                    <label>Gender:</label>
+                    <input type="radio" id="male" name="gender" value="male"> Male
+                    <input type="radio" id="female" name="gender" value="female"> Female
+                    <input type="radio" id="transgender" name="gender" value="transgender"> Transgender
+                    <br>
+                    <br>
+                    <label for="department">Department:</label>
+                    <select name="department" id="department">
+                        <option>Computer Science and Engineering</option>
+                        <option selected>Information Technology</option>
+                        <option>Civil Engineering</option>
+                        <option>Artificial Intelligence</option>
+                        <option>Data Security</option>
+                    </select><br><br>
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" rows="3" cols="29"></textarea><br><br>
+                    <input type="submit">
+                    <input type="reset">
+                </form>
+            </div>
+        </fieldset>
+    </div><br>
+    <h1>Table with CSS</h1>
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Department</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td>Arun</td>
+                    <td>arun@gmail.com</td>
+                    <td>21</td>
+                    <td>Male</td>
+                    <td>Computer Science and Engineering</td>
+                    <td>I am Arun from Trichy . I want to learn CSE Dept in JJ College</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>Antony</td>
+                    <td>anto@gmail.com</td>
+                    <td>21</td>
+                    <td>Male</td>
+                    <td>Computer Science and Engineering</td>
+                    <td>I am Antony from Chennai . I want to learn CSE Dept in JJ College</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>Raghul</td>
+                    <td>raghul@gmail.com</td>
+                    <td>24</td>
+                    <td>Male</td>
+                    <td>Civil Engineering</td>
+                    <td>I am Raghul from Trichy . I want to learn Civil Dept in Sastra College</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>Kishore</td>
+                    <td>kishore@gmail.com</td>
+                    <td>22</td>
+                    <td>Male</td>
+                    <td>Artificial Intelligence</td>
+                    <td>I am Kishore from Nagercoil . I want to learn AI Dept in KRCET College</td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>Yuvaraj</td>
+                    <td>yuva@gmail.com</td>
+                    <td>21</td>
+                    <td>Male</td>
+                    <td>Information Technology</td>
+                    <td>I am Yuvaraj from Madurai . I want to learn IT Dept in Care College</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+
+</html>

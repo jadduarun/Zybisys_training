@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Tags</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        h3 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #div1 {
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+            border: 1px solid #aaaaaa;
+        }
+
+        img {
+            height: 200px;
+            width: 200px;
+        }
+
+        .DND {
+            padding-left: 150px;
+        }
+
+        header {
+            display: flex;
+            background-color: lightseagreen;
+            width: 100%;
+            height: 100px;
+        }
+
+        .nav {
+            list-style-type: none;
+            display: flex;
+            margin-top: 35px;
+            font-size: 20px;
+        }
+
+        a:link {
+            color: green;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: white;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        .pady {
+            margin-left: 20px;
+        }
+
+    </style>
+    <script>
+        function allowDrop(event) {
+            event.preventDefault();
+        }
+        function drag(event) {
+            event.dataTransfer.setData("text", event.target.id);
+        }
+        function drop(event) {
+            event.preventDefault();
+            var data = event.dataTransfer.getData("text");
+            event.target.appendChild(document.getElementById(data));
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1 style="margin-left: 50px;margin-top: 30px;letter-spacing: 1px;">Multimedia</h1>
+        <nav>
+            <ul class="nav">
+                <li style="margin-left: 460px;"><a href="#">Home</a></li>
+                <li style="margin-left: 50px;"><a href="#audio">Audios</a></li>
+                <li style="margin-left: 50px;"><a href="#video">Videos</a></li>
+                <li style="margin-left: 50px;"><a href="#other">Other Webpages</a></li>
+                <li style="margin-left: 50px;"><a href="#DND">DND</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="audio" class="pady">
+        <h2>Audio Files</h2>
+        <ul>
+            <li>
+                <h3>Audio file of Police Siren</h3>
+                <audio controls loop style="margin-left: 100px;">
+                    <source src="Police Siren.mp3" type="audio/mp3" />An audio file of police siren
+                </audio>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <h3>Audio file of Applause</h3>
+                <audio controls muted style="margin-left: 100px;">
+                    <source src="Applause.wav" type="audio/wav" />An audio file of Applause
+                </audio>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <h3>Audio file of Alarm</h3>
+                <audio controls muted style="margin-left: 100px;">
+                    <source src="Alarm.wav" type="audio/wav" />An Audio file of Alarm
+                </audio>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <hr>
+    <div id="video" class="pady">
+        <h2>Video Files</h2>
+        <ul>
+            <li>
+                <h3>Sample video of girl pasting her to do's in a paper</h3>
+                <video controls loop style="height:300px;width:500px; margin-left: 100px;">
+                    <source src="A girl to do.mp4" type="video/mp4" />Here is an sample video of girl pasting her to do's
+                    in a paper
+                </video>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <h3>Sample video of Purple Paint Underwater</h3>
+                <video controls loop style="height:300px;width:500px; margin-left: 100px;">
+                    <source src="Purple Paint.mp4" type="video/mp4" />Here is an sample video of purple paint of
+                    underwater
+                </video>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <hr>
+    <div id="other" class="pady">
+        <h2>Other Websites</h2>
+        <ul>
+            <li>
+                <h3>We are using a website of W3Docs to learn HTML</h3>
+                <iframe src="https://www.w3docs.com/learn-html.html" height="500" width="500"
+                    style="margin-left: 100px;"></iframe>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <h3>We are using a website of Youtube to Watch Cartoon</h3>
+                <iframe width="500" height="315" src="https://www.youtube.com/embed/RymCIkzuIfE?playlist=RymCIkzuIfE&autoplay=1&mute=1" style="margin-left: 100px;"></iframe>
+            </li>
+        </ul>
+        <hr>
+    </div>
+    <div id="DND" class="pady">
+        <h2>Drag and Drop API</h2>
+        <p>Drag the Image either of two boxes</p>
+        <div class="DND">
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"><img id="drag1" src="institute.jpg"
+                    draggable="true" ondragstart="drag(event)" width="200" height="200"></div>
+            <br>
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+    </div>
+</body>
+
+</html>

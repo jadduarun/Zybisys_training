@@ -1,0 +1,160 @@
+body {
+    margin: 20px;
+    background-color: thistle;
+}
+
+h1 {
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 800px;
+    margin-bottom: 100px;
+}
+
+table tr:nth-child(even) {
+    background-color: turquoise;
+}
+
+table tr:hover {
+    cursor: pointer;
+    background-color: violet;
+}
+
+table tr th {
+    background-color: navajowhite;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+}
+
+fieldset {
+    width: 500px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+legend {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 500px;
+}
+
+label {
+    text-align: left;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+label:hover {
+    color: aliceblue;
+}
+
+input {
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+input[type="text"],
+[type="email"] {
+    margin-left: 59px;
+}
+
+input[type="text"]:hover {
+    background-color: mediumturquoise;
+}
+
+input[type="email"]:hover {
+    background-color: mediumturquoise;
+}
+
+input[type="number"] {
+    margin-left: 74px;
+}
+
+input[type="number"]:hover {
+    background-color: mediumturquoise;
+}
+
+input[type="radio"] {
+    margin-left: 51px;
+}
+
+select {
+    margin-left: 16px;
+    padding: 2px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+textarea {
+    margin-left: 20px;
+    position: absolute;
+    resize: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+textarea:hover {
+    background-color: mediumturquoise;
+}
+
+input[type="submit"] {
+    margin: 60px 0px 15px 141px;
+    padding: 6px 15px;
+    background-color: peachpuff;
+    font-size: 15px;
+    border-radius: 20px;
+}
+
+input[type="reset"] {
+    margin-left: 41px;
+    padding: 6px 16px;
+    background-color: peachpuff;
+    font-size: 15px;
+    border-radius: 20px;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: silver;
+}
+
+input[type="reset"]:hover {
+    cursor: pointer;
+    background-color: silver;
+}
+
+input[type="submit"]:active {
+    background-color: burlywood;
+}
+
+input[type="reset"]:active {
+    background-color: burlywood;
+}

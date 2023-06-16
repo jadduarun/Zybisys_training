@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Tags</title>
+    <style>
+        table{
+            border: 1px solid;
+            margin-left: 20px;
+            height: 200px;
+            width: 300px;
+        }
+        th,td{
+            padding: 5px 20px 5px 10px;
+            text-align: left;
+            border: 1px solid;
+        }
+        summary{
+            padding-left: 30px;
+            padding-top: 5px;
+        }
+        .sum{
+            padding-left: 45px;
+        }
+        header{
+            display: flex;
+        }
+        h2{
+            margin-top: 60px;
+            margin-left: 10px;
+        }
+        .nav{
+            list-style-type:none;
+            display: flex;
+            margin-top: 65px;
+        }
+        .frontend {
+            display: flex;
+        }
+        .backend{
+            display: flex;
+        }
+        .fullstack{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="institute.jpg" alt="Brand Logo" height="150px" width="150px">
+        <h2>Educational Institution</h2>
+        <nav>
+            <ul class="nav">
+                <li style="margin-left: 320px;"><a href="#">Home</a></li>
+                <li style="margin-left: 50px;"><a href="#features">Features</a></li>
+                <li style="margin-left: 50px;"><a href="#prices">Prices</a></li>
+                <li style="margin-left: 50px;"><a href="#about">About Us</a></li>
+                <li style="margin-left: 50px;"><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <section>
+            <h3 id="features">Features</h3>
+            <details>
+                <summary><b>Live Class</b></summary>
+                <img src="Liveclass.jfif" alt="Live Class" height="150px" width="200px" style="padding-left: 45px; padding-top: 10px;">
+                <p class="sum">Live Classes are different from online courses in the sense that online courses are delivered asynchronously.</p>
+            </details>
+            <details>
+                <summary><b>Efficient Time</b></summary>
+                <img src="Time.jfif" alt="Live Class" height="150px" width="250px" style="padding-left: 45px; padding-top: 10px;">
+                <p class="sum">Clarify your doubts as 24/7 . We are ready to clear your doubts at any time.</p>
+            </details>
+            <details>
+                <summary><b>Placements</b></summary>
+                <img src="Placement.jfif" alt="Live Class" height="150px" width="250px" style="padding-left: 45px; padding-top: 10px;">
+                <p class="sum">Build your career by using our placement department . They will teach you how to crack in the interview sessions.</p>
+            </details>
+        </section>
+        </div>
+        <br>
+        <hr>
+        <section>
+            <h3 id="prices">Prices</h3>
+            <table>
+                <tr>
+                    <th>Language</th>
+                    <th>Cost</th>
+                </tr>
+                <tr>
+                    <td>Frontend Language</td>
+                    <td>10000/-</td>
+                </tr>
+                <tr>
+                    <td>Backend Language</td>
+                    <td>10000/-</td>
+                </tr>
+                <tr>
+                    <td>Full Stack Development</td>
+                    <td>20000/-</td>
+                </tr>
+            </table>
+        </section>
+        <br>
+        <hr>
+        <section>
+            <h3 style="text-align: center;" id="about">About Us</h3>
+            <p style="padding-left:30px;">We are providing multiple technology's to teach and guide you to provide a better career . For example,</p>
+            <div class="frontend">
+            <ul>
+                <li>
+                    <h4>Frontend Language</h4>
+                    <p>Welcome to our front-end web developer learning pathway!<br><br>Here we provide you with a structured course that will teach you all you need to know to become a front-end web developer. Work through each section, learning new skills (or improving existing ones) as you go along. Each section includes exercises and assessments to test your understanding before you move forward.</p>
+                </li>
+            </ul>
+            <img src="Frontend.jpg" alt="Front End Languages" height="180px" width="450px" style="padding-left: 45px; padding-top: 10px; padding-right: 50px;">
+            </div>
+            <ul>
+                <li>
+                    <h4>Backend Language</h4>
+                    <div class="backend">
+                    <img src="Backend.jpg" alt="Front End Languages" height="180px" width="450px" style="padding-top: 10px; padding-right: 50px;">
+                    <p>Back-end development refers to the development of server-side logic that powers websites and apps from behind the scenes. It includes all the code needed to build out the database, server, and application. From database migrations to API integrations to setting up the server-side technologies that make a website tick, a back-end web developer may be the talent you need to get your next web project off the ground.<br><br>A backend developer creates code that does relational mapping to retrieve data from a database. MySQL, PostgreSQL, SQL SERVER, MongoDB, and Oracle Database are some of the most widely used DBMS. It's crucial to have a good understanding of how they work.</p>
+                </li>
+            </ul>
+            </div>
+            <div class="fullstack">
+            <ul>
+                <li>
+                    <h4>Fullstack Development</h4>
+                    <p> Full Stack Development is a software profession/stream where a developer deals with both the Frontend (client-side) and Backend (server-side) of a tech product. A Full Stack Developer is proficient in several technologies that help in developing a robust tech product, and thus play a major role in making decisions for the company. It is one of the high-demand jobs in the software industry</p>
+                </li>
+            </ul>
+            <img src="Fullstack.png" alt="Fullstack Development" height="180px" width="450px" style="padding-left: 45px; padding-top: 10px; padding-right: 50px;">
+            </div>
+        </section>
+        <hr>
+        <section>
+            <h3 id="contact">Contact Us</h3>
+            <p style="padding-left:20px;">Please feel free to contact us & we would be happy to assist you!</p>
+            <hr>
+            <p><b>Email id</b></p>
+            <p style="padding-left:20px;">For support : arun29@gmail.com</p>
+            <hr>
+            <p><b>Phone Number</b></p>
+            <p style="padding-left:20px;">For support : 8765489831</p>
+            <hr>
+            <p><b>Queries</b></p>
+            <form style="padding-left:20px;">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                
+                <label for="message">Message:</label>
+                <textarea style="position: absolute;" id="message" name="message"></textarea><br><br>
+                <br>
+                <input type="submit">
+            </form>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <p style="text-align: center;">&copy;All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

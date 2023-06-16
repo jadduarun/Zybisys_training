@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register Form</title>
+</head>
+<style>
+body{
+margin: 0px;
+padding: 0px;
+}
+h1{
+margin-left:140px;
+font-family:serif;
+}
+label{
+margin-left:90px;
+font-weight:600;
+font-family:sans-serif;
+font-size:16px;
+}
+#name{
+margin-left:88px;
+}
+#mail{
+margin-left:89px;
+}
+#age{
+margin-left:102px;
+}
+#gender{
+margin-left:76px;
+}
+#gender1{
+margin-left:230px;
+}
+#lang{
+margin-left:89px;
+}
+#lang1{
+margin-left:230px;
+}
+#tel{
+margin-left:17px;
+}
+#date{
+margin-left:36px;
+}
+#time{
+margin-left:94px;
+}
+#color{
+margin-left:59px;
+}
+#domain{
+margin-left:73px;
+}
+#address,#resume{
+margin-left:70px;
+}
+#pass{
+margin-left:55px;
+}
+#submit{
+margin-left:150px;
+margin-top:10px;
+}
+#reset{
+margin-left:30px;
+}
+.center{
+display: flex;
+justify-content: center;
+}
+.form{
+border-radius:15px;
+}
+textarea{
+position:absolute;
+}
+</style>
+<body style="background-color:#bdfff6">
+<div class="center">
+<form>
+<div class="form" style="border:1px solid;height:810px;width:500px; margin-left:50px;padding-left:20px;background-color:whitesmoke">
+<h1>Register Form</h1>
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" pattern="[A-Za-z]+" title="Enter the Valid Name" required>
+<br>
+<br>
+<div>
+<label for="mail">Email:</label>
+<input type="email" id="mail" name="mail" title="Enter the Valid Email" required>
+</div>
+<br>
+<label for="age">Age:</label>
+<input type="number" id="age" name="age" min="18" max="25" required>
+<br>
+<br>
+<label >Gender:</label>
+<input type="radio" id="gender" name="gender" value="male" required> Male
+<br>
+<br>
+<input type="radio" id="gender1" name="gender" value="female"> Female
+<br>
+<br>
+<input type="radio" id="gender1" name="gender" value="transgender"> Transgender
+<br>
+<br>
+<label for="tel">Phone Number:</label>
+<input type="tel" id="tel" name="tel" minlength="10" maxlength="10" pattern="[789][0-9]{9}" title="Enter the Valid Phone Number" required>
+<br>
+<br>
+<label for="date">Date of Birth:</label>
+<input type="date" id="date" name="date" min="2019-01-01" max="2024-01-01" required>
+<br>
+<br>
+<label for="time">Time:</label>
+<input type="time" id="time" name="time" required>
+<br>
+<br>
+<label>Skills:</label>
+<input type="checkbox" id="lang" name="lang1" value="HTML"> HTML
+<br>
+<br>
+<input type="checkbox" id="lang1" name="lang2" value="CSS"> CSS
+<br>
+<br>
+<input type="checkbox" id="lang1" name="lang3" value="Java Script"> Java Script
+<br>
+<br>
+<label for="color">Fav Color:</label>
+<input type="color" id="color" name="color">
+<br>
+<br>
+<label for="domain">Domain:</label>
+<select name="domain" id="domain">
+<option>AI</option>
+<option selected>ML</option>
+<option>Deep Learning</option>
+</select>
+<br>
+<br>
+<label for="address">Address:</label>
+<textarea type="text" id="address" name="address" maxlength="200" required></textarea>
+<br>
+<br>
+<br>
+<label for="pass">Password:</label>
+<input type="password" id="pass" name="pass" required>
+<br>
+<br>
+<label for="resume">Resume:</label>
+<input type="file" id="resume" name="resume">
+<br>
+<br>
+<input type="submit" id="submit">
+<input type="reset" id="reset">
+</div>
+</form>
+</div>
+</body>
+</html>
