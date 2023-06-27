@@ -1,0 +1,73 @@
+class tracker
+{
+  constructor()
+  {
+     this.arr=[];
+     this.count=0;
+  }
+    additem(name,date,location)
+    {
+      const obj=
+      {
+        name,
+        date,
+        location
+      }
+      this.arr.push(obj)
+      this.count++;
+    }
+displayitems()
+    {
+    
+      const display=this.arr;
+      display.forEach((element)=>
+      {
+        console.log(`Task : ${element.name}`)
+        console.log(`Date : ${element.date}`)
+        console.log(`Location : ${element.location}`)
+        console.log();
+      })
+    }    
+displaycount()
+    {
+    return this.count
+    }
+    
+    filteritems(startdate,endate)
+    {
+      return this.arr.filter((element=>
+      {
+        return((element.date>=startdate)&&(element.date<=endate))
+      }))
+    }
+}
+const events=new tracker();
+
+events.additem("Meeting-1","2023-05-14","Conference-room A")
+events.additem("Meeting-2","2023-07-08","Conference-room B")
+events.additem("Workshop","2023-09-01","Auditorium")
+
+
+console.log("Display Events");
+console.log("");
+events.displayitems();
+
+ const filterdata=events.filteritems("2023-04-10","2023-08-10")
+ 
+ console.log("Range of Events");
+ console.log("");
+ 
+ 
+ filterdata.forEach((element)=>
+      {
+        console.log(`task:${element.name}`)
+        console.log(`date:${element.date}`)
+        console.log(`location:${element.location}`)
+        console.log();
+      })
+      
+console.log("---------------------------------");
+
+const count =events.displaycount()
+
+console.log(`Total No. of Events : ${count}`)
