@@ -565,7 +565,7 @@ input[type="email"] {
     margin-left: 305px;
   }
   .richard_and_review {
-    width: 88.5%;
+    width: 85.5%;
     margin-left: 190px;
   }
   .richard_review {
@@ -597,44 +597,6 @@ input[type="email"] {
   body {
     width: 130%;
   }
-  /*.top_content {
-    background-position: 800px;
-    background-position-y: bottom;
-    max-height: 550px;
-    background-size: 620px 650px;
-  }
-  .contents {
-    padding-left: 12px;
-  }
-  .content_description {
-    padding-right: 212px;
-  }
-  .content_btn {
-    padding-right: 410px;
-  }
-  .left_question {
-    width: 67%;
-    padding-right: 28px;
-  }
-  .center_left_description {
-    width: 50.5%;
-    margin-right: 130px;
-  }
-  .trackcompany_description {
-    width: 53%;
-  }
-  .advanced_description {
-    width: 53%;
-  }
-  .everything_description {
-    width: 53%;
-  }
-  .richard_and_review {
-    width: 106.5%;
-  }
-  .footer_top_question {
-    padding-right: 240px;
-  } */
 }
 @media screen and (max-width: 1244px) {
   body {
