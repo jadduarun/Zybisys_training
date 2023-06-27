@@ -1,0 +1,484 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#body {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+#outline {
+    width: 50%;
+}
+
+#heading {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    width: 92%;
+}
+.right{
+    display: flex;
+}
+.btn_and_moon{
+    display: flex;
+    border-left: 1px solid black;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+.btn-group{
+    margin-top: 8px;
+    border: 1px solid black;
+    border-radius: 50px;
+    height: 20px;
+    width: 50px;
+    padding: 1px;
+    background-color: #757575;
+    margin-left: 5px;
+}
+#on{
+    border: none;
+    width: 40%;
+    height: 19px;
+    border-radius: 50%;
+    margin-left: 2px;
+    background-color: white;
+}
+#off{
+    margin-left: -5px;
+    border: none;
+    width: 40%;
+    height: 19px;
+    border-radius: 50%;
+    margin-left: 2px;
+    background-color: #757575;
+}
+.moon{
+    margin-top: 5px;
+    margin-left: 15px;
+}
+select#lang {
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.search {
+    margin-top: 20px;
+    width: 87%;
+    padding: 16px;
+    font-size: 17px;
+    border: 1px solid grey;
+    background: #f1f1f1;
+    border-radius: 15px;
+}
+
+#search_btn {
+    font-size: 17px;
+    padding: 6.5px;
+    margin-left: -44px;
+    border: none;
+    cursor: pointer;
+}
+
+i {
+    color: blue;
+}
+.loader{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    border: 8px solid #8d8d8d;
+    border-radius: 50%;
+    border-top:  8px solid rgba(54, 54, 222, 0.943);
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#title{
+    display: flex;
+    justify-content: space-between;
+}
+#dic_title {
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+#dic_title_phonetic {
+    font-size: 25px;
+    color: blueviolet;
+    margin-top: 5px;
+}
+#play{
+    margin-top: 34px;
+    margin-right: 45px;
+    border: none;
+    border-radius: 50%;
+    width:70px;
+    height: 70px;
+    background-color: #e9d0fa;
+    display: none;
+}
+#play_img{
+    margin-left: 3px;
+}
+.pause{
+    margin-right: 2px;
+    margin-top: 2px;
+}
+#noun {
+    display: none;
+}
+
+hr {
+    margin-top: -12px;
+    width: 82%;
+    margin-left: 60px;
+}
+
+#noun_title {
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+#meaning {
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+#meaning_ul {
+    width: 86%;
+    text-align: justify;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+#meaning_li {
+    padding: 10px 5px;
+}
+
+.synonyms_and_value {
+    display: flex;
+    margin-top: 40px;
+}
+
+#synonyms,
+#synonyms_value {
+    font-size: 20px;
+}
+
+#synonyms_value {
+    color: blue;
+    padding-left: 35px
+}
+
+#verb_and_hr{
+    display: flex;
+}
+
+#verb {
+    display: none;
+}
+
+#verb_title {
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: cursive;
+}
+.center_hr{
+    margin-top: -12px;
+    width: 82%;
+    margin-left: 60px;
+}
+#verb_meaning {
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+#verb_ul {
+    width: 86%;
+    text-align: justify;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+#verb_meaning_li {
+    padding: 15px 0px;
+}
+
+#source {
+    display: none;
+    margin-top: 20px;
+}
+
+.bottom {
+    width: 92%;
+    margin-left: 0px;
+    margin-top: 25px;
+}
+
+.source_and_url {
+    display: flex;
+    margin-top: 20px;
+}
+
+#source_title {
+    font-size: 15px;
+}
+.source_and_goto{
+    display: flex;
+}
+#source_url {
+    padding-left: 25px;
+    text-decoration: underline;
+    color: red;
+}
+#goto_page{
+    padding-left: 10px;
+}
+
+@media screen and (max-width:786px){
+
+#outline {
+    width: 95%;
+}
+#heading {
+    width: 100%;
+}
+.search {
+    width: 92%;
+}
+#dic_title {
+    font-size: 70px;
+}
+
+#dic_title_phonetic {
+    font-size: 45px;
+}
+#play{
+    margin-top: 38px;
+    margin-right: 10px;
+    width:100px;
+    height: 100px;
+}
+#play_img{
+    height: 40px;
+    width: 40px;
+}
+hr {
+    width: 87.5%;
+}
+#noun_title {
+    font-size: 25px;
+}
+#meaning {
+    font-size: 25px;
+}
+#meaning_ul {
+    width: 92%;
+    font-size: 20.5px;
+}
+#synonyms,
+#synonyms_value {
+    font-size: 25px;
+}
+.center_hr{
+    width: 87%;
+}
+#verb_title {
+    font-size: 25px;
+}
+#verb_meaning {
+    font-size: 25px;
+}
+#verb_ul {
+    width: 94%;
+    font-size: 20.5px;
+}
+.bottom {
+    width: 99%;
+}
+#source_title {
+    font-size: 20px;
+}
+#source_url {
+    font-size: 20px
+}
+
+#goto_page{
+    height: 23px;
+    width: 23px;
+}
+}
+@media screen and (max-width:500px){
+    #outline {
+        width: 90%;
+    }
+    #heading {
+        width: 98%;
+    }
+    .search {
+        width: 88%;
+    }
+    #dic_title {
+        font-size: 45px;
+    }
+    
+    #dic_title_phonetic {
+        font-size: 20px;
+    }
+    #play{
+        margin-top: 35px;
+        margin-right: 10px;
+        width:60px;
+        height: 60px;
+    }
+    #play_img{
+        height: 25px;
+        width: 25px;
+    }
+    hr {
+        width: 80.5%;
+    }
+    #noun_title {
+        font-size: 20px;
+    }
+    #meaning {
+        font-size: 18px;
+    }
+    #meaning_ul {
+        width: 88%;
+        font-size: 15px;
+    }
+    #synonyms,
+    #synonyms_value {
+        font-size: 18px;
+    }
+    .center_hr{
+        width: 80%;
+    }
+    #verb_title {
+        font-size: 20px;
+    }
+    #verb_meaning {
+        font-size: 18px;
+    }
+    #verb_ul {
+        width: 88%;
+        font-size: 15px;
+    }
+    .bottom {
+        width: 98%;
+    }
+    #source_title {
+        font-size: 15px;
+    }
+    #source_url {
+        font-size: 15px
+    }
+    
+    #goto_page{
+        height: 17px;
+        width: 17px;
+    }
+}
+@media screen and (max-width:350px){
+    #outline {
+        width: 90%;
+    }
+    #heading {
+        width: 98%;
+    }
+    .search {
+        width: 90%;
+        padding: 8px;
+    }
+    #dic_title {
+        font-size: 35px;
+    }
+    
+    #dic_title_phonetic {
+        font-size: 20px;
+    }
+    #play{
+        margin-top: 38px;
+        margin-right: 10px;
+        width:40px;
+        height: 40px;
+    }
+    #play_img{
+        margin-top: 4px;
+        height: 17px;
+        width: 17px;
+    }
+    hr {
+        width: 78.5%;
+        margin-top: -10px;
+    }
+    #noun_title {
+        font-size: 17px;
+    }
+    #meaning {
+        font-size: 16px;
+    }
+    #meaning_ul {
+        width: 87%;
+        font-size: 13px;
+    }
+    #synonyms,
+    #synonyms_value {
+        font-size: 15px;
+    }
+    .center_hr{
+        width: 78.5%;
+        margin-top: -10px;
+    }
+    #verb_title {
+        font-size: 17px;
+    }
+    #verb_meaning {
+        font-size: 16px;
+    }
+    #verb_ul {
+        width: 87%;
+        font-size: 13px;
+    }
+    .bottom {
+        width: 98%;
+    }
+    #source_title {
+        font-size: 14px;
+    }
+    #source_url {
+        font-size: 13px;
+        padding-left: 0px;
+    }
+    #goto_page{
+        height: 13px;
+        width: 13px;
+        padding-left: 5px;
+    }
+    .source_and_url{
+        display: flex;
+        flex-direction: column;
+    }
+    .source_and_goto{
+        display: flex;
+        padding-top: 5px;
+    }
+}
