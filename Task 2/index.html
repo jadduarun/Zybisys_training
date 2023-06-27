@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Task</title>
+</head>
+
+<body>
+    <form id="myForm">
+        <input type="text" id="input" />
+        <input type="submit" id="btn""/>
+    </form>
+    <script>
+        document.getElementById("btn").addEventListener("click", (event) => {
+            event.preventDefault();
+
+            let btn = document.getElementById("btn");
+
+            if (event.target == btn) {
+                let input = document.getElementById("input").value;
+                console.log([...input].reverse().join(""));
+                const [even, odd] = [...input].reduce((r, char, i) => (r[i % 2].push(char), r), [[], []])
+                console.log(even.join('') + odd.join(''))
+                
+            var count = {};
+
+            for (var i = 0; i < input.length; i++) {
+                var char = input.charAt(i); 
+                if (count[char]) { 
+                    count[char]++; 
+                } else {
+                    count[char] = 1;
+                }
+            } 
+            for (var char in count) {
+                 out = "" + char + ":" + count[char];
+                  console.log(out); 
+                }
+
+            var chars = input.split("");
+
+            for (var i=0;i<input.length-1;i+=2){
+                var temp = chars[i];
+                chars[i]=chars[i+1];
+                chars[i+1] = temp;
+            }
+            console.log(chars.join(''))
+            }
+        }) 
+        </script>
+</body>
+
+</html>
