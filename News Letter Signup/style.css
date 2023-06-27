@@ -1,0 +1,266 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #37384e;
+}
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 99.8vh;
+}
+.box{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: white;
+    width: 580px;
+    height: 350px;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    padding:16px 33px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h1{
+    font-size: 38px;
+    color: #232642;
+}
+.join_updates{
+    font-size: 12px;
+    padding-top: 15px;
+}
+#benefits{
+    margin-top: 8px;
+}
+.benefits{
+    display: flex;
+    font-size: 12px;
+    padding-top: 8px;
+}
+.benefit_para{
+    padding-left: 10px;
+}
+#mail_form{
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+}
+.label{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+label{
+    font-size: 10px;
+    color: #232642;
+    font-weight: 700;
+}
+#valid_email{
+    color: red;
+    font-size: 10px;
+}
+input{
+    width: 84.8%;
+    padding: 8px 15px;
+    margin:5px 0px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 12px;
+}
+#subscribe{
+    padding: 13px;
+    color: white;
+    font-size: 12px;
+    width: 96%;
+    margin:5px 0px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: #232642;
+    cursor: pointer;
+}
+#popup{
+    position: absolute;
+}
+.success{
+    padding-left: 40px;
+    padding-top: 0px;
+}
+.thanks{
+    padding-left: 40px;
+    padding-top: 10px;
+    line-height: 42px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.confirmation{
+    padding:20px 40px;
+    font-size: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+span{
+    font-weight: bold;
+    color: #232642;
+}
+.dismiss{
+    padding: 13px;
+    color: white;
+    font-size: 12px;
+    width: 72%;
+    margin:0px 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: #232642;
+    cursor: pointer;
+}
+#popup{
+    position: fixed;
+    display:none;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    font-size: 16px;
+    padding:30px 10px;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    height: 280px;
+    width: 300px;
+    border-radius: 30px;
+}
+#popupbg{
+    position: fixed;
+    display: none;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color:#37384e;
+    z-index: 999;
+}
+
+@media screen and (max-width:620px) {
+    body{
+        background-color: white;
+    }
+    .body{
+        background-image: url(./images/illustration-sign-up-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: 460px 350px;
+        background-position-x: center;
+    }
+    .box{
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 440px;
+        height: 250px;
+        margin-top: 540px;
+    }
+    .left{
+        padding: 0px 0px;
+    }
+    input{
+        width: 70%;
+    }
+    #subscribe{
+        width: 78%;
+    }
+    #valid_email{
+        padding-right:80px;
+    }
+    .news_letter_img{
+        display: none;
+    }
+}
+
+@media screen and (max-width:480px){
+    .body{
+        background-size: 360px 250px;
+    }
+    .box{
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 320px;
+        height: 250px;
+        margin-top: 330px;
+    }
+    h1{
+        font-size: 28px;
+    }
+    input{
+        width: 85%;
+    }
+    #subscribe{
+        width: 95%;
+    }
+    label{
+        font-size: 8px;
+    }
+    #valid_email{
+        font-size: 8px;
+        padding-right:10px;
+    }
+    .success{
+        padding-left: 40px;
+        padding-top: 0px;
+    }
+    .thanks{
+        padding-left: 40px;
+        padding-top: 10px;
+        line-height: 32px;
+    }
+    .confirmation{
+        padding:10px 40px;
+        font-size: 12px;
+    }
+    span{
+        font-weight: bold;
+        color: #232642;
+    }
+    .dismiss{
+        padding: 13px;
+        color: white;
+        font-size: 12px;
+        width: 72%;
+        margin:0px 40px;
+        border-radius: 5px;
+        border: 1px solid black;
+        background-color: #232642;
+        cursor: pointer;
+    }
+    #popup{
+        padding:0px 0px;
+        height: 240px;
+        width: 250px;
+    }
+    #popupbg{
+        background-color:white;
+    }
+}
+
+@media screen and (max-width:238px){
+    .body{
+        background-size: 235px 170px;
+    }
+    .box{
+        width: 220px;
+        height: 150px;
+        margin-top: 190px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    input{
+        width: 75%;
+    }
+    #subscribe{
+        width: 91%;
+        font-size: 8px;
+    }
+}
